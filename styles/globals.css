@@ -80,7 +80,7 @@ footer {
 /* phone size = 400px */
 @media(max-width : 400px){
   .hero {
-    padding: 5rem 2rem 1rem 1rem;
+    padding: 5rem 1rem 1rem 1rem;
   }
 
   .hero h1 {
