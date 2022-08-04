@@ -80,8 +80,18 @@ footer {
 /* phone size = 400px */
 @media(max-width : 400px){
   .hero {
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 5rem 2rem 1rem 1rem;
   }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    color: #00000090;
+  }
+
 
   footer {
     padding: 20px 30px;
@@ -90,5 +100,10 @@ footer {
 
   header{
     text-align: center;
+  }
+
+  button {
+   font-size: 15px;
+   padding: 17px 20px; 
   }
 }
