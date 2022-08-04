@@ -70,3 +70,25 @@ footer {
 .hero p {
   font-size: 20px;
 }
+
+
+
+
+
+/* responsive design */
+
+/* phone size = 400px */
+@media(max-width : 400px){
+  .hero {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  footer {
+    padding: 20px 30px;
+    justify-content: space-evenly;
+  }
+
+  header{
+    text-align: center;
+  }
+}
