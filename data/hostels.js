@@ -33,7 +33,7 @@ const hostels = [
       },
       {
         featureName: "Jain Food",
-        available: true,
+        available: false,
       },
       {
         featureName: "Laundry",
