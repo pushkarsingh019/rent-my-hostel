@@ -54,7 +54,7 @@ function Home(){
                 {hostels.map((hostel) => {
                     return(
                         <div className="hostel-card">
-                        <HostelCard name={hostel.name} address={hostel.address} rating={hostel.rating} review={hostel.review} distanceFromUniversity={hostel.distanceFromUniversity} key={hostel.id} id={hostel.id} price={hostel.pricing[0].price} />
+                        <HostelCard key={hostel.id} name={hostel.name} address={hostel.address} rating={hostel.rating} review={hostel.review} distanceFromUniversity={hostel.distanceFromUniversity} id={hostel.id} price={hostel.pricing[0].price} />
                         </div>
                     )
                 })}
