@@ -4,6 +4,10 @@
 :root {
   --primary-color : #D9D9D9;
   --button-color : #007AFF;
+  --background-color : #F9F2ED;
+  --positive-color : #6CC4A1;
+  --secondary-text : #00000080;
+  --attention-color : #EB4747;
 }
 
 * {
@@ -16,6 +20,78 @@
 
 /* Components */
 
+
+/* Hostel card component -> Home Screen */
+.main-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.hostel-card {
+  padding: 20px 30px;
+  filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.25));
+  margin: 40px 0px;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+.building-image {
+  border-radius: 16px;
+}
+
+.hostel-image {
+  width: 350px;
+  height: 200px;
+  border-radius: 16px;
+  background-color: var(--primary-color);
+}
+
+.hostel-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+
+.distance {
+  color: var(--positive-color);
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.secondary-text {
+  color: var(--secondary-text);
+}
+
+.pricing-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.price {
+  color: var(--attention-color);
+}
+
+.rating-box {
+  background-color: var(--positive-color);
+  color: white;
+  padding: 2px;
+}
+
+.actions {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+.review-text {
+  margin-left: 20px;
+}
+
+
 /* Navbar */
 
 header {
@@ -24,30 +100,52 @@ header {
 }
 
 /* Button */
-button {
+.button {
   padding: 17px 25px;
   border-radius: 14px;
   border: none;
   font-size: 16px;
-  transition: 1s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 button:hover {
-  scale: 1.5;
+  transform: scale(1.1);
 }
 
 .cta {
   background-color: var(--button-color);
   color: white;
+}
 
+.search-button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: white;
+  border-radius: 14px;
+  border: none;
+}
+
+.primary {
+  padding: 10px 13px;
+  background-color: var(--positive-color);
+  color: white;
+  border-radius: 0px;
+  margin-left: 12px;
+}
+
+.secondary {
+  padding: 8px 10px;
+  border: 1px black solid;
+  border-radius: 0px;
+  background-color: white;
 }
 
 /* Footer */
 footer {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,6 +169,41 @@ footer {
   font-size: 20px;
 }
 
+/* Search Section -> Home Page */
+.search {
+  padding: 100px 75px;
+}
+
+.search h1 {
+  font-size: 40px;
+}
+
+.search p {
+  font-size: 20px;
+}
+
+/* select options section -> home page */
+
+.search select {
+  padding: 10px 20px;
+  margin: 0 1.5rem 0 0;
+}
+
+/* find section -> home page */
+
+.find {
+  padding: 20px 75px;
+}
+
+.find h1 {
+  font-size: 1.5rem;
+}
+
+/* hostels section -> Home Page */
+.hostels {
+  padding: 20px 75px;
+  background-color: var(--background-color);
+}
 
 
 
