@@ -35,7 +35,7 @@ function HostelCard({name, address, review, distanceFromUniversity, id, rating, 
         <div>
         <div className="main-grid">
         <div className="hostel-image">
-            <Image className="building-image" src={hostelBuilding} layout="responsive" width={350} height="200" />
+            <Image className="building-image" src={hostelBuilding} alt={name} layout="responsive" width={350} height="200" />
         </div>
         <div className="hostel-details">
             <h2>{name}</h2>

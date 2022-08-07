@@ -53,7 +53,7 @@ function Home(){
             <section className="hostels">
                 {hostels.map((hostel) => {
                     return(
-                        <div className="hostel-card">
+                        <div key={hostel.id} className="hostel-card">
                         <HostelCard key={hostel.id} name={hostel.name} address={hostel.address} rating={hostel.rating} review={hostel.review} distanceFromUniversity={hostel.distanceFromUniversity} id={hostel.id} price={hostel.pricing[0].price} />
                         </div>
                     )
