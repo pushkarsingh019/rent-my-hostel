@@ -2,7 +2,14 @@ import React from "react";
 
 function NewPg(){
     return(
-        <h1>Register a new pg</h1>
+        <main>
+            <form>
+                <input type="text" placeholder="Enter the name of the hostel" />
+                <br />
+                <input type="text" placeholder="Enter the Google maps link" />
+                <br />
+            </form>
+        </main>
     )
 };
 

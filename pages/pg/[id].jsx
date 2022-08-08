@@ -33,10 +33,18 @@ export const getStaticProps = async (context) => {
 
 function CarouselSection(){
     return(
-        <Carousel axis="horizontal">
+        <Carousel centerMode centerSlidePercentage={80}  showArrows={true}>
             <div>
-                <Image src={hostelBuilding} alt={`image`} />
-                <p className="legend">3 Sharing</p>
+            <Image src={hostelBuilding} alt="Hostel Building" />
+            <p className="legend">3 Sharing</p>
+            </div>
+            <div>
+            <Image src={hostelBuilding} alt="Hostel Building" />
+            <p className="legend">3 Sharing</p>
+            </div>
+            <div>
+            <Image src={hostelBuilding} alt="Hostel Building" />
+            <p className="legend">3 Sharing</p>
             </div>
         </Carousel>
     )
@@ -77,6 +85,7 @@ function HostelPage({hostelData}){
     return(
         <main>
             <Navbar />
+            {/* <CarouselSection /> */}
             <DetailsSection hostelData={hostelData} />
         </main>
     )

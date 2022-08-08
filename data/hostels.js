@@ -33,7 +33,7 @@ const hostels = [
       },
       {
         featureName: "Jain Food",
-        available: false,
+        available: true,
       },
       {
         featureName: "Laundry",
@@ -67,7 +67,7 @@ const hostels = [
     pricing: [
       {
         room: "3 Sharing",
-        price: 10000,
+        price: 9000,
       },
       {
         room: "2 Sharing",
@@ -124,7 +124,7 @@ const hostels = [
     pricing: [
       {
         room: "3 Sharing",
-        price: 10000,
+        price: 10500,
       },
       {
         room: "2 Sharing",
